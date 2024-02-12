@@ -1,0 +1,14 @@
+<div class="container mt-3">
+  <div class="card-trip">
+    <%= image_tag @flat['imageUrl'], alt: "flat photo" %>
+    <div class="card-trip-infos">
+      <div>
+        <h2><%= @flat['name'] %></h2>
+      </div>
+      <h2 class="card-trip-pricing">£<%= @flat['price'] %></h2>
+    </div>
+  </div>
+  <p>
+    <%= link_to 'Home', root_path, class: 'btn btn-primary mt-2'  %>
+  </p>
+</div>
